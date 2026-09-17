@@ -1,0 +1,1734 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Здоровые зубы — Стоматология экспертного уровня на Васильевском острове</title>
+    <meta name="description" content="Стоматология на 8-й линии Васильевского острова. Имплантация и челюстно-лицевая хирургия. Врач к.м.н. с 25-летним стажем.">
+    
+    <!-- Premium Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --color-dark: #1a1a1a;
+            --color-charcoal: #2c2c2c;
+            --color-text: #3a3a3a;
+            --color-text-light: #6b6b6b;
+            --color-accent: #8b7355;
+            --color-accent-light: #a89279;
+            --color-bg: #fafaf8;
+            --color-white: #ffffff;
+            --color-border: #e8e6e1;
+            --font-serif: 'Cormorant Garamond', Georgia, serif;
+            --font-sans: 'Inter', -apple-system, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 18px;
+        }
+
+        body {
+            font-family: var(--font-sans);
+            color: var(--color-text);
+            line-height: 1.7;
+            background: var(--color-bg);
+            font-weight: 400;
+            -webkit-font-smoothing: antialiased;
+            padding-bottom: 80px;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: var(--font-serif);
+            font-weight: 500;
+            line-height: 1.15;
+            color: var(--color-dark);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 3rem;
+        }
+
+        /* Header */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(250, 250, 248, 0.97);
+            backdrop-filter: blur(20px);
+            border-bottom: 1px solid var(--color-border);
+            z-index: 1000;
+            transition: all 0.4s ease;
+        }
+
+        nav {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 1.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-family: var(--font-serif);
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+        }
+
+        .logo span {
+            color: var(--color-accent);
+            font-style: italic;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 3rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--color-text);
+            font-weight: 400;
+            font-size: 0.9rem;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            transition: color 0.3s;
+            position: relative;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background: var(--color-accent);
+            transition: width 0.4s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--color-accent);
+        }
+
+        .header-phone {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .phone-number {
+            font-size: 1.05rem;
+            font-weight: 500;
+            color: var(--color-dark);
+            text-decoration: none;
+            letter-spacing: 0.02em;
+            transition: color 0.3s;
+        }
+
+        .phone-number:hover {
+            color: var(--color-accent);
+        }
+
+        .phone-label {
+            font-size: 0.75rem;
+            color: var(--color-text-light);
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+            margin-top: 0.2rem;
+        }
+
+        /* Hero */
+        .hero {
+            margin-top: 80px;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 6rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 3rem;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .hero-content .section-label {
+            font-size: 0.8rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: 2rem;
+            display: block;
+            font-weight: 500;
+        }
+
+        .hero-content h1 {
+            font-size: 4.5rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            letter-spacing: -0.01em;
+        }
+
+        .hero-content h1 em {
+            font-style: italic;
+            color: var(--color-accent);
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.25rem;
+            color: var(--color-text-light);
+            margin-bottom: 3rem;
+            font-weight: 300;
+            line-height: 1.6;
+            max-width: 500px;
+        }
+
+        .hero-features {
+            display: flex;
+            flex-direction: column;
+            gap: 1.2rem;
+            margin-bottom: 3.5rem;
+            padding-left: 0;
+            list-style: none;
+        }
+
+        .hero-feature {
+            display: flex;
+            align-items: baseline;
+            gap: 1rem;
+            font-size: 1rem;
+            color: var(--color-text);
+        }
+
+        .hero-feature::before {
+            content: '';
+            width: 30px;
+            height: 1px;
+            background: var(--color-accent);
+            flex-shrink: 0;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .btn {
+            padding: 1.1rem 2.8rem;
+            border: none;
+            font-family: var(--font-sans);
+            font-weight: 500;
+            font-size: 0.9rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.4s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: var(--color-dark);
+            color: var(--color-white);
+        }
+
+        .btn-primary:hover {
+            background: var(--color-accent);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--color-dark);
+            border: 1px solid var(--color-dark);
+        }
+
+        .btn-outline:hover {
+            background: var(--color-dark);
+            color: var(--color-white);
+        }
+
+        .hero-image {
+            position: relative;
+            height: 600px;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: grayscale(20%);
+        }
+
+        .hero-image::after {
+            content: '';
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: -30px;
+            bottom: -30px;
+            border: 1px solid var(--color-accent);
+            z-index: -1;
+        }
+
+        .experience-block {
+            position: absolute;
+            bottom: 60px;
+            left: -40px;
+            background: var(--color-white);
+            padding: 2.5rem 3rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+        }
+
+        .experience-block .number {
+            font-family: var(--font-serif);
+            font-size: 4rem;
+            font-weight: 500;
+            color: var(--color-dark);
+            line-height: 1;
+            display: block;
+        }
+
+        .experience-block .text {
+            font-size: 0.8rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-text-light);
+            margin-top: 0.5rem;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 8rem 0;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-header .section-label {
+            font-size: 0.8rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: 1.5rem;
+            display: block;
+            font-weight: 500;
+        }
+
+        .section-header h2 {
+            font-size: 3.5rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.01em;
+        }
+
+        .section-header p {
+            color: var(--color-text-light);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 300;
+        }
+
+        /* About */
+        .about {
+            background: var(--color-white);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .about-image {
+            position: relative;
+            height: 700px;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .about-content .section-label {
+            font-size: 0.8rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: 1.5rem;
+            display: block;
+            font-weight: 500;
+        }
+
+        .about-content h3 {
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+        }
+
+        .doctor-name {
+            font-family: var(--font-serif);
+            font-size: 1.8rem;
+            color: var(--color-accent);
+            margin-bottom: 0.5rem;
+            font-style: italic;
+        }
+
+        .doctor-title {
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--color-text-light);
+            margin-bottom: 2.5rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .about-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+            font-weight: 300;
+            line-height: 1.8;
+        }
+
+        .credentials {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .credential-item {
+            font-size: 0.95rem;
+            color: var(--color-text);
+            padding-left: 1.5rem;
+            position: relative;
+            font-weight: 400;
+        }
+
+        .credential-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.6rem;
+            width: 8px;
+            height: 1px;
+            background: var(--color-accent);
+        }
+
+        /* Services */
+        .services {
+            background: var(--color-bg);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0;
+        }
+
+        .service-card {
+            border-top: 1px solid var(--color-border);
+            transition: all 0.4s ease;
+            background: var(--color-white);
+            cursor: pointer;
+        }
+
+        .service-card:last-child {
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .service-header {
+            padding: 2.5rem 3rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .service-header:hover {
+            background: var(--color-bg);
+        }
+
+        .service-title-group {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex: 1;
+        }
+
+        .service-number {
+            font-family: var(--font-serif);
+            font-size: 1.2rem;
+            color: var(--color-accent);
+            font-style: italic;
+            min-width: 40px;
+        }
+
+        .service-title {
+            flex: 1;
+        }
+
+        .service-title h3 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s;
+        }
+
+        .service-title p {
+            color: var(--color-text-light);
+            font-size: 0.95rem;
+            font-weight: 300;
+        }
+
+        .service-toggle {
+            width: 40px;
+            height: 40px;
+            border: 1px solid var(--color-border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .service-toggle::before {
+            content: '+';
+            font-size: 1.5rem;
+            color: var(--color-accent);
+            font-weight: 300;
+        }
+
+        .service-card.active .service-toggle {
+            background: var(--color-dark);
+            border-color: var(--color-dark);
+        }
+
+        .service-card.active .service-toggle::before {
+            content: '−';
+            color: var(--color-white);
+        }
+
+        .service-details {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease;
+        }
+
+        .service-card.active .service-details {
+            max-height: 2000px;
+        }
+
+        .service-content {
+            padding: 0 3rem 3rem;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        .service-description {
+            font-size: 1rem;
+            line-height: 1.8;
+            color: var(--color-text);
+            font-weight: 300;
+        }
+
+        .service-description h4 {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .service-description ul {
+            list-style: none;
+            margin-top: 1rem;
+        }
+
+        .service-description li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            font-size: 0.95rem;
+        }
+
+        .service-description li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 1rem;
+            width: 6px;
+            height: 1px;
+            background: var(--color-accent);
+        }
+
+        .service-pricing {
+            background: var(--color-bg);
+            padding: 2rem;
+            border: 1px solid var(--color-border);
+        }
+
+        .service-pricing h4 {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .price-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--color-border);
+            font-size: 0.95rem;
+        }
+
+        .price-item:last-child {
+            border-bottom: none;
+        }
+
+        .price-item .service-name {
+            color: var(--color-text);
+            font-weight: 400;
+        }
+
+        .price-item .price {
+            color: var(--color-dark);
+            font-weight: 500;
+            white-space: nowrap;
+            margin-left: 1rem;
+        }
+
+        /* Doctors */
+        .doctors {
+            background: var(--color-white);
+        }
+
+        .doctors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+        }
+
+        .doctor-card {
+            text-align: center;
+        }
+
+        .doctor-photo {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            margin-bottom: 2rem;
+            filter: grayscale(30%);
+            transition: filter 0.4s ease;
+        }
+
+        .doctor-card:hover .doctor-photo {
+            filter: grayscale(0%);
+        }
+
+        .doctor-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .doctor-specialty {
+            font-size: 0.85rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .doctor-info {
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            font-weight: 300;
+            line-height: 1.6;
+        }
+
+        /* Why Us */
+        .why-us {
+            background: var(--color-dark);
+            color: var(--color-white);
+        }
+
+        .why-us .section-header h2 {
+            color: var(--color-white);
+        }
+
+        .why-us .section-header p {
+            color: rgba(255,255,255,0.6);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 4rem 3rem;
+        }
+
+        .feature-box {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.15);
+        }
+
+        .feature-number {
+            font-family: var(--font-serif);
+            font-size: 1rem;
+            color: var(--color-accent-light);
+            margin-bottom: 1.5rem;
+            display: block;
+            font-style: italic;
+        }
+
+        .feature-box h3 {
+            font-size: 1.5rem;
+            color: var(--color-white);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .feature-box p {
+            color: rgba(255,255,255,0.6);
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.7;
+        }
+
+        /* Location */
+        .location {
+            background: var(--color-white);
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 6rem;
+            align-items: center;
+        }
+
+        .location-info .section-label {
+            font-size: 0.8rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: 1.5rem;
+            display: block;
+            font-weight: 500;
+        }
+
+        .location-info h3 {
+            font-size: 2.8rem;
+            margin-bottom: 3rem;
+            font-weight: 400;
+        }
+
+        .location-item {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .location-item:last-of-type {
+            border-bottom: none;
+        }
+
+        .location-item-label {
+            font-size: 0.75rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: 0.8rem;
+            display: block;
+            font-weight: 500;
+        }
+
+        .location-item h4 {
+            font-family: var(--font-sans);
+            font-size: 1.1rem;
+            font-weight: 500;
+            color: var(--color-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .location-item p {
+            color: var(--color-text-light);
+            font-size: 1rem;
+            font-weight: 300;
+        }
+
+        .location-item a {
+            color: var(--color-dark);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .location-item a:hover {
+            color: var(--color-accent);
+        }
+
+        .location-image {
+            height: 600px;
+            position: relative;
+        }
+
+        .location-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* CTA */
+        .cta {
+            background: var(--color-bg);
+            text-align: center;
+            padding: 10rem 0;
+        }
+
+        .cta .section-label {
+            font-size: 0.8rem;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: var(--color-accent);
+            margin-bottom: 2rem;
+            display: block;
+            font-weight: 500;
+        }
+
+        .cta h2 {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            font-weight: 400;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta h2 em {
+            font-style: italic;
+            color: var(--color-accent);
+        }
+
+        .cta p {
+            font-size: 1.15rem;
+            color: var(--color-text-light);
+            margin-bottom: 3.5rem;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: 300;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--color-dark);
+            color: rgba(255,255,255,0.7);
+            padding: 5rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 4rem;
+            margin-bottom: 4rem;
+            padding-bottom: 4rem;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .footer-col .logo {
+            color: var(--color-white);
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-col p {
+            font-size: 0.95rem;
+            font-weight: 300;
+            line-height: 1.8;
+            max-width: 350px;
+        }
+
+        .footer-col h4 {
+            font-family: var(--font-sans);
+            font-size: 0.8rem;
+            letter-spacing: 0.2em;
+            text-transform: uppercase;
+            color: var(--color-accent-light);
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        .footer-col a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+            font-weight: 300;
+            transition: color 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: var(--color-accent-light);
+        }
+
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: rgba(255,255,255,0.4);
+            letter-spacing: 0.05em;
+        }
+
+        /* Sticky Mobile Button */
+        .sticky-cta {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: var(--color-white);
+            border-top: 1px solid var(--color-border);
+            padding: 1rem 2rem;
+            display: none;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 999;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+        }
+
+        .sticky-cta-info {
+            flex: 1;
+        }
+
+        .sticky-cta-info .address {
+            font-size: 0.8rem;
+            color: var(--color-text-light);
+            margin-bottom: 0.3rem;
+        }
+
+        .sticky-cta-info .phone {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--color-dark);
+            text-decoration: none;
+        }
+
+        .sticky-cta-buttons {
+            display: flex;
+            gap: 0.8rem;
+        }
+
+        .sticky-btn {
+            padding: 0.8rem 1.5rem;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        /* Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(40px);
+            transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            html { font-size: 16px; }
+            .container { padding: 0 2rem; }
+            nav { padding: 1.2rem 2rem; }
+            .nav-links { gap: 2rem; }
+            
+            .hero-container {
+                grid-template-columns: 1fr;
+                gap: 4rem;
+                padding: 0 2rem;
+            }
+            
+            .hero-content h1 { font-size: 3rem; }
+            .hero-image { height: 500px; }
+            .experience-block { left: 20px; bottom: 20px; }
+            
+            .about-grid, .location-grid {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+            
+            .about-image { height: 500px; }
+            
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            
+            .section-header h2 { font-size: 2.5rem; }
+            .about-content h3, .location-info h3 { font-size: 2.2rem; }
+            .cta h2 { font-size: 2.8rem; }
+            
+            section { padding: 5rem 0; }
+
+            .service-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links, .header-phone { display: none; }
+            .hero-content h1 { font-size: 2.5rem; }
+            .hero-buttons { flex-direction: column; align-items: flex-start; }
+            .credentials { grid-template-columns: 1fr; }
+            .footer-bottom { flex-direction: column; gap: 1rem; }
+            
+            .sticky-cta { display: flex; }
+            
+            .service-header {
+                padding: 1.5rem 1.5rem;
+            }
+            
+            .service-title-group {
+                gap: 1rem;
+            }
+            
+            .service-title h3 {
+                font-size: 1.2rem;
+            }
+            
+            .service-content {
+                padding: 0 1.5rem 2rem;
+            }
+            
+            .doctors-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="#" class="logo">Здоровые <span>зубы</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">О клинике</a></li>
+                <li><a href="#services">Услуги и цены</a></li>
+                <li><a href="#doctors">Врачи</a></li>
+                <li><a href="#why-us">Преимущества</a></li>
+                <li><a href="#location">Контакты</a></li>
+            </ul>
+            <div class="header-phone">
+                <a href="tel:+79219998688" class="phone-number">+7 (921) 999-86-88</a>
+                <span class="phone-label">Пн–Пт, 10:00–22:00</span>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="section-label">Стоматология на Васильевском острове</span>
+                <h1>Экспертный уровень <em>имплантации</em> и хирургии</h1>
+                <p class="subtitle">Клиника кандидата медицинских наук Гурама Нодаровича Маградзе. 25 лет опыта в решении сложных стоматологических задач.</p>
+                <ul class="hero-features">
+                    <li class="hero-feature">Имплантация и челюстно-лицевая хирургия</li>
+                    <li class="hero-feature">Случаи, от которых отказались другие</li>
+                    <li class="hero-feature">Современное оборудование и протоколы</li>
+                    <li class="hero-feature">8-я линия Васильевского острова</li>
+                </ul>
+                <div class="hero-buttons">
+                    <a href="#location" class="btn btn-primary">Записаться на приём</a>
+                    <a href="tel:+79219998688" class="btn btn-outline">Позвонить</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="doctor-main.jpg" alt="Гурам Нодарович Маградзе">
+                <div class="experience-block">
+                    <span class="number">25</span>
+                    <span class="text">лет практики</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="clinic-interior-2.jpg" alt="Интерьер клиники">
+                </div>
+                <div class="about-content">
+                    <span class="section-label">О клинике</span>
+                    <h3>Медицина, основанная на опыте и точности</h3>
+                    <div class="doctor-name">Гурам Нодарович Маградзе</div>
+                    <div class="doctor-title">Кандидат медицинских наук · Челюстно-лицевой хирург · Имплантолог</div>
+                    <p>Наша клиника расположена в историческом центре Васильевского острова, на 8-й линии. За фасадом старого петербургского дома скрывается современное стоматологическое пространство, где работают по принципам доказательной медицины.</p>
+                    <p>Специализация клиники — сложные случаи имплантации, костная пластика, синус-лифтинг и исправление последствий неудачного лечения. Мы не берёмся за всё подряд: мы делаем то, в чём действительно сильны.</p>
+                    <p>Работаем по принципу «один раз и навсегда» — находим и устраняем причину, а не маскируем симптомы.</p>
+                    <div class="credentials">
+                        <div class="credential-item">Кандидат медицинских наук</div>
+                        <div class="credential-item">Высшая врачебная категория</div>
+                        <div class="credential-item">Доцент кафедры ЧЛХ СПбГМУ</div>
+                        <div class="credential-item">25+ лет хирургической практики</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Услуги и цены</span>
+                <h2>Направления работы</h2>
+                <p>Нажмите на услугу, чтобы увидеть подробную информацию и стоимость</p>
+            </div>
+            <div class="services-grid">
+                
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-title-group">
+                            <span class="service-number">01</span>
+                            <div class="service-title">
+                                <h3>Имплантация зубов</h3>
+                                <p>Все протоколы имплантации</p>
+                            </div>
+                        </div>
+                        <div class="service-toggle"></div>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-content">
+                            <div class="service-description">
+                                <h4>О услуге</h4>
+                                <p>Полный спектр услуг по имплантации: от классической двухэтапной имплантации до одномоментной с немедленной нагрузкой. Работаем с ведущими мировыми системами имплантов.</p>
+                                <ul>
+                                    <li>Классическая имплантация</li>
+                                    <li>Одномоментная имплантация</li>
+                                    <li>Имплантация с костной пластикой</li>
+                                    <li>Синус-лифтинг (открытый и закрытый)</li>
+                                    <li>Протезирование на имплантах</li>
+                                    <li>All-on-4, All-on-6</li>
+                                </ul>
+                            </div>
+                            <div class="service-pricing">
+                                <h4>Стоимость</h4>
+                                <div class="price-item">
+                                    <span class="service-name">Консультация имплантолога</span>
+                                    <span class="price">Бесплатно</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Имплант Astra Tech (Швеция)</span>
+                                    <span class="price">от 60 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Имплант Nobel Biocare</span>
+                                    <span class="price">от 75 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Имплант Straumann</span>
+                                    <span class="price">от 80 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Синус-лифтинг</span>
+                                    <span class="price">от 25 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Костная пластика</span>
+                                    <span class="price">от 20 000 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-title-group">
+                            <span class="service-number">02</span>
+                            <div class="service-title">
+                                <h3>Челюстно-лицевая хирургия</h3>
+                                <p>Сложные хирургические вмешательства</p>
+                            </div>
+                        </div>
+                        <div class="service-toggle"></div>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-content">
+                            <div class="service-description">
+                                <h4>О услуге</h4>
+                                <p>Хирургические операции любой сложности под руководством кандидата медицинских наук с 25-летним опытом. Исправляем последствия неудачных вмешательств.</p>
+                                <ul>
+                                    <li>Удаление зубов мудрости (в том числе ретинированных)</li>
+                                    <li>Удаление дистопированных зубов</li>
+                                    <li>Резекция верхушки корня</li>
+                                    <li>Пластика уздечки языка и губы</li>
+                                    <li>Операции на челюстях</li>
+                                    <li>Исправление осложнений после удаления</li>
+                                </ul>
+                            </div>
+                            <div class="service-pricing">
+                                <h4>Стоимость</h4>
+                                <div class="price-item">
+                                    <span class="service-name">Простое удаление зуба</span>
+                                    <span class="price">от 5 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Сложное удаление зуба</span>
+                                    <span class="price">от 8 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Удаление зуба мудрости</span>
+                                    <span class="price">от 12 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Резекция верхушки корня</span>
+                                    <span class="price">от 15 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Пластика уздечки</span>
+                                    <span class="price">от 8 000 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-title-group">
+                            <span class="service-number">03</span>
+                            <div class="service-title">
+                                <h3>Протезирование</h3>
+                                <p>Восстановление эстетики и функции</p>
+                            </div>
+                        </div>
+                        <div class="service-toggle"></div>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-content">
+                            <div class="service-description">
+                                <h4>О услуге</h4>
+                                <p>Все виды протезирования: от одиночных коронок до полного восстановления зубного ряда. Работаем с лучшими материалами и зуботехническими лабораториями.</p>
+                                <ul>
+                                    <li>Коронки из диоксида циркония</li>
+                                    <li>Коронки из E-max (стеклокерамика)</li>
+                                    <li>Металлокерамические коронки</li>
+                                    <li>Виниры и люминиры</li>
+                                    <li>Мостовидные протезы</li>
+                                    <li>Съёмные протезы</li>
+                                    <li>Протезирование на имплантах</li>
+                                </ul>
+                            </div>
+                            <div class="service-pricing">
+                                <h4>Стоимость</h4>
+                                <div class="price-item">
+                                    <span class="service-name">Коронка из диоксида циркония</span>
+                                    <span class="price">от 45 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Коронка E-max</span>
+                                    <span class="price">от 40 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Металлокерамическая коронка</span>
+                                    <span class="price">от 25 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Винир E-max</span>
+                                    <span class="price">от 50 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Съёмный протез</span>
+                                    <span class="price">от 35 000 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-title-group">
+                            <span class="service-number">04</span>
+                            <div class="service-title">
+                                <h3>Терапия и эндодонтия</h3>
+                                <p>Лечение кариеса и каналов</p>
+                            </div>
+                        </div>
+                        <div class="service-toggle"></div>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-content">
+                            <div class="service-description">
+                                <h4>О услуге</h4>
+                                <p>Современное терапевтическое лечение с использованием микроскопа и новейших материалов. Перелечиваем каналы даже в самых сложных случаях.</p>
+                                <ul>
+                                    <li>Лечение кариеса</li>
+                                    <li>Лечение пульпита</li>
+                                    <li>Лечение периодонтита</li>
+                                    <li>Перелечивание каналов под микроскопом</li>
+                                    <li>Художественная реставрация</li>
+                                    <li>Профессиональная гигиена</li>
+                                </ul>
+                            </div>
+                            <div class="service-pricing">
+                                <h4>Стоимость</h4>
+                                <div class="price-item">
+                                    <span class="service-name">Консультация терапевта</span>
+                                    <span class="price">2 500 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Лечение кариеса</span>
+                                    <span class="price">от 7 500 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Лечение пульпита (1 канал)</span>
+                                    <span class="price">от 12 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Перелечивание канала</span>
+                                    <span class="price">от 8 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Профессиональная гигиена</span>
+                                    <span class="price">7 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Отбеливание Zoom 4</span>
+                                    <span class="price">35 000 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-title-group">
+                            <span class="service-number">05</span>
+                            <div class="service-title">
+                                <h3>Пародонтология</h3>
+                                <p>Лечение заболеваний дёсен</p>
+                            </div>
+                        </div>
+                        <div class="service-toggle"></div>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-content">
+                            <div class="service-description">
+                                <h4>О услуге</h4>
+                                <p>Диагностика и комплексное лечение заболеваний пародонта. Работаем с гингивитом, пародонтитом, рецессией десны.</p>
+                                <ul>
+                                    <li>Диагностика заболеваний дёсен</li>
+                                    <li>Закрытый кюретаж</li>
+                                    <li>Открытый кюретаж</li>
+                                    <li>Лоскутные операции</li>
+                                    <li>Пластика десны</li>
+                                    <li>Поддерживающая терапия</li>
+                                </ul>
+                            </div>
+                            <div class="service-pricing">
+                                <h4>Стоимость</h4>
+                                <div class="price-item">
+                                    <span class="service-name">Консультация пародонтолога</span>
+                                    <span class="price">2 500 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Закрытый кюретаж (1 зуб)</span>
+                                    <span class="price">от 1 500 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Открытый кюретаж (1 зуб)</span>
+                                    <span class="price">от 3 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Лоскутная операция</span>
+                                    <span class="price">от 8 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Пластика десны</span>
+                                    <span class="price">от 12 000 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-header">
+                        <div class="service-title-group">
+                            <span class="service-number">06</span>
+                            <div class="service-title">
+                                <h3>Диагностика</h3>
+                                <p>Точная диагностика перед лечением</p>
+                            </div>
+                        </div>
+                        <div class="service-toggle"></div>
+                    </div>
+                    <div class="service-details">
+                        <div class="service-content">
+                            <div class="service-description">
+                                <h4>О услуге</h4>
+                                <p>Современная диагностика с использованием цифровых технологий. 3D-планирование операций и имплантации для максимальной точности.</p>
+                                <ul>
+                                    <li>Компьютерная томография (КТ)</li>
+                                    <li>Ортопантомограмма (ОПТГ)</li>
+                                    <li>3D-планирование имплантации</li>
+                                    <li>Навигационные хирургические шаблоны</li>
+                                    <li>Фотопротокол</li>
+                                </ul>
+                            </div>
+                            <div class="service-pricing">
+                                <h4>Стоимость</h4>
+                                <div class="price-item">
+                                    <span class="service-name">КТ одного зуба</span>
+                                    <span class="price">1 500 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">КТ обеих челюстей</span>
+                                    <span class="price">3 500 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">ОПТГ</span>
+                                    <span class="price">2 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">3D-планирование</span>
+                                    <span class="price">5 000 ₽</span>
+                                </div>
+                                <div class="price-item">
+                                    <span class="service-name">Хирургический шаблон</span>
+                                    <span class="price">от 15 000 ₽</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="doctors" id="doctors">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Наша команда</span>
+                <h2>Врачи клиники</h2>
+                <p>Опытные специалисты, которым доверяют пациенты</p>
+            </div>
+            <div class="doctors-grid">
+                
+                <div class="doctor-card">
+                    <img src="doctor-main.jpg" alt="Маградзе Гурам Нодарович" class="doctor-photo">
+                    <h3>Маградзе Гурам Нодарович</h3>
+                    <div class="doctor-specialty">Челюстно-лицевой хирург, имплантолог</div>
+                    <div class="doctor-info">
+                        Кандидат медицинских наук, доцент кафедры ЧЛХ СПбГМУ. Стаж работы более 25 лет. Специализация: имплантация, костная пластика, синус-лифтинг, сложная хирургия.
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="doctor-2.jpg" alt="Абесадзе Георгий Валерьевич" class="doctor-photo">
+                    <h3>Абесадзе Георгий Валерьевич</h3>
+                    <div class="doctor-specialty">Стоматолог-терапевт</div>
+                    <div class="doctor-info">
+                        Опыт работы 10 лет. Специализация: лечение кариеса, пульпита, периодонтита, эндодонтия под микроскопом, художественная реставрация.
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="doctor-3.jpg" alt="Гриненко Михаил Юрьевич" class="doctor-photo">
+                    <h3>Гриненко Михаил Юрьевич</h3>
+                    <div class="doctor-specialty">Стоматолог-терапевт</div>
+                    <div class="doctor-info">
+                        Опытный терапевт. Специализация: лечение сложных случаев кариеса, перелечивание каналов, работа с осложнёнными случаями пульпита.
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="doctor-4.jpg" alt="Мунчава Рональд Малхазович" class="doctor-photo">
+                    <h3>Мунчава Рональд Малхазович</h3>
+                    <div class="doctor-specialty">Стоматолог-ортопед</div>
+                    <div class="doctor-info">
+                        Специалист по протезированию. Специализация: коронки из циркония и E-max, виниры, мостовидные протезы, протезирование на имплантах.
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="doctor-5.jpg" alt="Павлиашвили Мария Тимуровна" class="doctor-photo">
+                    <h3>Павлиашвили Мария Тимуровна</h3>
+                    <div class="doctor-specialty">Стоматолог-гигиенист</div>
+                    <div class="doctor-info">
+                        Специалист по профессиональной гигиене полости рта. Проводит чистку зубов, отбеливание, обучает пациентов правильной гигиене.
+                    </div>
+                </div>
+
+                <!-- Временно скрыто: Ларченко Т.В. Вернуть после получения фото
+               <div class="doctor-card">
+                    <img src="doctor-6.jpg" alt="Ларченко Татьяна Владимировна" class="doctor-photo">
+                    <h3>Ларченко Татьяна Владимировна</h3>
+                    <div class="doctor-specialty">Стоматолог-терапевт</div>
+                <div class="doctor-info">
+                        Опытный врач-терапевт. Специализация: лечение кариеса, пульпита, профилактика заболеваний полости рта.
+                   </div>
+               </div>
+                -->
+
+                <div class="doctor-card">
+                    <img src="doctor-7.jpg" alt="Дорошенко Виталий Дмитриевич" class="doctor-photo">
+                    <h3>Дорошенко Виталий Дмитриевич</h3>
+                    <div class="doctor-specialty">Стоматолог-терапевт</div>
+                    <div class="doctor-info">
+                        Врач-терапевт. Специализация: лечение кариеса, реставрация зубов, эндодонтическое лечение.
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="doctor-8.jpg" alt="Лысикова Ирина Юрьевна" class="doctor-photo">
+                    <h3>Лысикова Ирина Юрьевна</h3>
+                    <div class="doctor-specialty">Стоматолог-ортодонт</div>
+                    <div class="doctor-info">
+                        Ортодонт. Специализация: исправление прикуса, установка брекет-систем и элайнеров, лечение зубочелюстных аномалий.
+                    </div>
+                </div>
+
+                <div class="doctor-card">
+                    <img src="doctor-9.jpg" alt="Садовникова Татьяна Глебовна" class="doctor-photo">
+                    <h3>Садовникова Татьяна Глебовна</h3>
+                    <div class="doctor-specialty">Стоматолог-ортодонт</div>
+                    <div class="doctor-info">
+                        Ортодонт. Специализация: коррекция прикуса у детей и взрослых, работа с брекет-системами и капами.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="why-us" id="why-us">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label" style="color: var(--color-accent-light);">Почему мы</span>
+                <h2>Принципы нашей работы</h2>
+                <p>То, что отличает нас от потоковых клиник</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-box">
+                    <span class="feature-number">01</span>
+                    <h3>Экспертность врача</h3>
+                    <p>Кандидат медицинских наук, доцент кафедры, 25 лет хирургической практики. Берёмся только за то, в чём действительно сильны.</p>
+                </div>
+                <div class="feature-box">
+                    <span class="feature-number">02</span>
+                    <h3>Диагностика прежде всего</h3>
+                    <p>Никакого лечения «на глаз». КТ-снимок, подробный план, обсуждение всех вариантов — до начала любых вмешательств.</p>
+                </div>
+                <div class="feature-box">
+                    <span class="feature-number">03</span>
+                    <h3>Фиксированная стоимость</h3>
+                    <p>Цена в плане лечения не меняется в процессе. Никаких скрытых доплат и навязанных услуг.</p>
+                </div>
+                <div class="feature-box">
+                    <span class="feature-number">04</span>
+                    <h3>Стерильность и безопасность</h3>
+                    <p>Полный цикл стерилизации, одноразовые расходники, протоколы инфекционного контроля. Ваше здоровье — не предмет экономии.</p>
+                </div>
+                <div class="feature-box">
+                    <span class="feature-number">05</span>
+                    <h3>Сопровождение после лечения</h3>
+                    <p>Контрольный осмотр, связь с врачом в послеоперационный период, письменные рекомендации. Мы не исчезаем после оплаты.</p>
+                </div>
+                <div class="feature-box">
+                    <span class="feature-number">06</span>
+                    <h3>Локация и атмосфера</h3>
+                    <p>5 минут от метро Василеостровская. Тихий центр острова, без суеты и потока. Приём по записи, без ожидания в очереди.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="location" id="location">
+        <div class="container">
+            <div class="location-grid">
+                <div class="location-info">
+                    <span class="section-label">Контакты</span>
+                    <h3>Запись на приём</h3>
+                    
+                    <div class="location-item">
+                        <span class="location-item-label">Адрес</span>
+                        <h4>8-я линия Васильевского острова, 9</h4>
+                        <p>Подъезд 1, 2 этаж. 5 минут пешком от метро Василеостровская.</p>
+                    </div>
+                    
+                   <div class="location-item">
+                         <span class="location-item-label">Телефон</span>
+                         <h4><a href="tel:+79219998688">+7 (921) 999-86-88</a></h4>
+                         <p>Ежедневно с 10:00 до 22:00</p>
+                    </div>
+                    
+                    <div class="location-item">
+                        <span class="location-item-label">Режим работы</span>
+                        <h4>Понедельник – Пятница</h4>
+                        <p>10:00 – 22:00. Суббота и воскресенье — выходной.</p>
+                    </div>
+
+                    <div style="margin-top: 3rem;">
+                        <a href="tel:+79219998688" class="btn btn-primary">Записаться по телефону</a>
+                    </div>
+                </div>
+                <div class="location-image">
+                    <img src="clinic-exterior.jpg" alt="Вход в клинику">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta">
+        <div class="container">
+            <span class="section-label">Первый шаг</span>
+            <h2>Консультация и план <em>лечения</em></h2>
+            <p>Начните с диагностики. Получите экспертное мнение и подробный план — даже если вы ещё не решили, где будете лечиться.</p>
+            <a href="tel:+79219998688" class="btn btn-primary">Записаться на консультацию</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="logo">Здоровые <span>зубы</span></a>
+                    <p>Стоматологическая клиника экспертного уровня. Имплантация, челюстно-лицевая хирургия, протезирование. Васильевский остров, Санкт-Петербург.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Контакты</h4>
+                    <a href="tel:+79219998688">+7 (921) 999-86-88</a>
+                    <a href="tel:+79219241177">+7 (921) 924-11-77</a>
+                    <a href="#location">8-я линия В.О., 9</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Навигация</h4>
+                    <a href="#about">О клинике</a>
+                    <a href="#services">Услуги и цены</a>
+                    <a href="#doctors">Врачи</a>
+                    <a href="#why-us">Преимущества</a>
+                    <a href="#location">Контакты</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Стоматология «Здоровые зубы». Все права защищены.</span>
+                <span>Санкт-Петербург, Васильевский остров</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky Mobile CTA -->
+    <div class="sticky-cta">
+        <div class="sticky-cta-info">
+            <div class="address">8-я линия В.О., 9</div>
+            <a href="tel:+79219998688" class="phone">+7 (921) 999-86-88</a>
+        </div>
+        <div class="sticky-cta-buttons">
+            <a href="tel:+79219998688" class="btn btn-primary sticky-btn">Позвонить</a>
+            <a href="https://wa.me/79219998688" class="btn btn-outline sticky-btn">WhatsApp</a>
+        </div>
+    </div>
+
+    <script>
+        // Service accordion
+        document.querySelectorAll('.service-card').forEach(card => {
+            card.addEventListener('click', function() {
+                const isActive = this.classList.contains('active');
+                
+                // Close all cards
+                document.querySelectorAll('.service-card').forEach(c => {
+                    c.classList.remove('active');
+                });
+                
+                // Open clicked card if it wasn't active
+                if (!isActive) {
+                    this.classList.add('active');
+                }
+            });
+        });
+
+        // Scroll animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+        document.querySelectorAll('.service-card, .feature-box, .about-content, .about-image, .location-info, .location-image, .doctor-card').forEach(el => {
+            el.classList.add('fade-in');
+            observer.observe(el);
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
