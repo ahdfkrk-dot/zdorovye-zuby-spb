@@ -724,6 +724,94 @@
             line-height: 1.7;
         }
 
+        /* Reviews */
+        .reviews {
+            background: var(--color-bg);
+        }
+
+        .reviews-rating {
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-bottom: 4rem;
+        }
+
+        .rating-number {
+            font-family: var(--font-serif);
+            font-size: 4rem;
+            color: var(--color-dark);
+            line-height: 1;
+        }
+
+        .rating-meta {
+            font-size: 0.85rem;
+            color: var(--color-text-light);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .reviews-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .review-card {
+            background: var(--color-white);
+            border: 1px solid var(--color-border);
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .review-card p {
+            font-family: var(--font-serif);
+            font-style: italic;
+            font-size: 1.15rem;
+            line-height: 1.7;
+            color: var(--color-text);
+            margin-bottom: 2rem;
+        }
+
+        .review-author {
+            display: block;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--color-dark);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .review-date {
+            display: block;
+            font-size: 0.75rem;
+            color: var(--color-text-light);
+            margin-top: 0.3rem;
+        }
+
+        .reviews-link {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .reviews-link a {
+            color: var(--color-accent);
+            text-decoration: none;
+            font-size: 0.85rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            border-bottom: 1px solid var(--color-accent);
+            padding-bottom: 0.3rem;
+            transition: color 0.3s, border-color 0.3s;
+        }
+
+        .reviews-link a:hover {
+            color: var(--color-dark);
+            border-color: var(--color-dark);
+        }
+
         /* Location */
         .location {
             background: var(--color-white);
@@ -799,6 +887,20 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+        }
+
+        .map-frame {
+            margin-top: 5rem;
+            border: 1px solid var(--color-border);
+            height: 420px;
+            overflow: hidden;
+        }
+
+        .map-frame iframe {
+            display: block;
+            width: 100%;
+            height: 100%;
+            border: 0;
         }
 
         /* Appointment form */
@@ -943,9 +1045,67 @@
             letter-spacing: 0.05em;
         }
 
-        /* Floating mobile CTA */
+        /* Floating actions: Связаться + наверх */
+        .floating-actions {
+            position: fixed;
+            right: 1.5rem;
+            bottom: calc(1.5rem + env(safe-area-inset-bottom));
+            z-index: 999;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0.7rem;
+        }
+
         .floating-cta {
-            display: none;
+            padding: 0.9rem 1.8rem;
+            background: var(--color-dark);
+            color: var(--color-white);
+            font-size: 0.75rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.25);
+            transition: background 0.3s;
+        }
+
+        .floating-cta:hover {
+            background: var(--color-accent);
+        }
+
+        .scroll-top {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 1px solid var(--color-border);
+            background: var(--color-white);
+            color: var(--color-dark);
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+            opacity: 0;
+            visibility: hidden;
+            transform: translateY(10px);
+            transition: all 0.3s ease;
+        }
+
+        .scroll-top.visible {
+            opacity: 1;
+            visibility: visible;
+            transform: translateY(0);
+        }
+
+        .scroll-top:hover {
+            border-color: var(--color-accent);
+            color: var(--color-accent);
+        }
+
+        .scroll-top svg {
+            width: 16px;
+            height: 16px;
         }
 
         /* Animations */
@@ -985,6 +1145,7 @@
             .about-image { height: 500px; }
 
             .doctors-grid { grid-template-columns: repeat(2, 1fr); }
+            .reviews-grid { grid-template-columns: 1fr; }
 
             .features-grid {
                 grid-template-columns: 1fr;
@@ -1006,6 +1167,11 @@
                 grid-template-columns: 1fr;
                 gap: 2rem;
             }
+
+            .map-frame {
+                height: 340px;
+                margin-top: 3rem;
+            }
         }
 
         @media (max-width: 768px) {
@@ -1017,23 +1183,6 @@
 
             .form-row { grid-template-columns: 1fr; gap: 0; }
 
-            .floating-cta {
-                display: inline-block;
-                position: fixed;
-                right: 1.2rem;
-                bottom: calc(1.2rem + env(safe-area-inset-bottom));
-                z-index: 999;
-                padding: 0.9rem 1.6rem;
-                background: var(--color-dark);
-                color: var(--color-white);
-                font-size: 0.75rem;
-                letter-spacing: 0.15em;
-                text-transform: uppercase;
-                text-decoration: none;
-                border-radius: 50px;
-                box-shadow: 0 10px 30px rgba(0,0,0,0.25);
-            }
-
             .service-header { padding: 1.5rem; }
             .service-title-group { gap: 1rem; }
             .service-title h3 { font-size: 1.2rem; }
@@ -1041,6 +1190,11 @@
 
             .doctors-grid { grid-template-columns: 1fr; }
             .doctor-photo { height: 400px; }
+
+            .floating-actions {
+                right: 1.2rem;
+                bottom: calc(1.2rem + env(safe-area-inset-bottom));
+            }
         }
     </style>
 </head>
@@ -1054,6 +1208,7 @@
                 <li><a href="#services">Услуги и цены</a></li>
                 <li><a href="#doctors">Врачи</a></li>
                 <li><a href="#why-us">Преимущества</a></li>
+                <li><a href="#reviews">Отзывы</a></li>
                 <li><a href="#location">Контакты</a></li>
             </ul>
             <div class="header-phone">
@@ -1472,6 +1627,50 @@
         </div>
     </section>
 
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Отзывы пациентов</span>
+                <h2>Что говорят о нас пациенты</h2>
+                <p>Подлинные отзывы с Яндекс Карт — без правок и украшательств</p>
+            </div>
+            <div class="reviews-rating">
+                <span class="rating-number">4.9</span>
+                <span class="rating-meta">на основе 95 оценок на Яндекс Картах</span>
+            </div>
+            <div class="reviews-grid">
+
+                <blockquote class="review-card">
+                    <p>Маградзе Гурам Нодарович — врач с золотыми руками! Делала имплантацию и открытый синус-лифтинг: максимум 40 минут в клинике, во время процедуры никакого дискомфорта. Всё настолько аккуратно, что не было ни значительного отёка, ни синяка.</p>
+                    <footer>
+                        <span class="review-author">Лилия Б.</span>
+                        <span class="review-date">Октябрь 2023 · Яндекс Карты</span>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="review-card">
+                    <p>Знакома с Гурамом Нодаровичем с 2016 года, когда меня неудачно прооперировали. Он провёл пять операций: удалил материал, расшил швы, убрал рубцы, нарастил челюсть, поставил импланты и формирователь десны. Исправил всё, что наработали при первой операции. Хирург от Бога и просто неравнодушный человек.</p>
+                    <footer>
+                        <span class="review-author">Татьяна И.</span>
+                        <span class="review-date">Июнь 2022 · Яндекс Карты</span>
+                    </footer>
+                </blockquote>
+
+                <blockquote class="review-card">
+                    <p>Пришла с кистой на зубе, который в другой клинике хотели удалить. Здесь зуб вылечили и сохранили. Импланты ставил Гурам Нодарович — совершенно не больно, всё быстро прижилось. Зубки очень красивые и ровные! Потому что здесь самые лучшие доктора и ассистенты.</p>
+                    <footer>
+                        <span class="review-author">Ирена</span>
+                        <span class="review-date">Декабрь 2024 · Яндекс Карты</span>
+                    </footer>
+                </blockquote>
+
+            </div>
+            <div class="reviews-link">
+                <a href="https://yandex.ru/maps/org/zdorovyye_zuby/128241970965/reviews/" target="_blank" rel="noopener">Читать все отзывы на Яндекс Картах</a>
+            </div>
+        </div>
+    </section>
+
     <section class="location" id="location">
         <div class="container">
             <div class="location-grid">
@@ -1504,6 +1703,10 @@
                 <div class="location-image">
                     <img src="clinic-exterior.jpg" alt="Вход в клинику">
                 </div>
+            </div>
+
+            <div class="map-frame">
+                <iframe src="https://yandex.ru/map-widget/v1/?ol=biz&oid=128241970965&z=17" title="Стоматология Здоровые зубы на Яндекс Картах" allowfullscreen="true"></iframe>
             </div>
         </div>
     </section>
@@ -1542,7 +1745,7 @@
                     <a href="#about">О клинике</a>
                     <a href="#services">Услуги и цены</a>
                     <a href="#doctors">Врачи</a>
-                    <a href="#why-us">Преимущества</a>
+                    <a href="#reviews">Отзывы</a>
                     <a href="#location">Контакты</a>
                 </div>
             </div>
@@ -1553,7 +1756,15 @@
         </div>
     </footer>
 
-    <a href="#appointment" class="floating-cta">Связаться</a>
+    <div class="floating-actions">
+        <button class="scroll-top" id="scrollTop" aria-label="Вернуться наверх">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 19V5"></path>
+                <path d="M5 12l7-7 7 7"></path>
+            </svg>
+        </button>
+        <a href="#appointment" class="floating-cta">Связаться</a>
+    </div>
 
     <script>
         // Аккордеон услуг
@@ -1576,7 +1787,7 @@
             });
         }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
 
-        document.querySelectorAll('.service-card, .feature-box, .about-content, .about-image, .location-info, .location-image, .doctor-card').forEach(el => {
+        document.querySelectorAll('.service-card, .feature-box, .about-content, .about-image, .location-info, .location-image, .doctor-card, .review-card').forEach(el => {
             el.classList.add('fade-in');
             observer.observe(el);
         });
@@ -1590,6 +1801,19 @@
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }
             });
+        });
+
+        // Кнопка возврата наверх: появляется после прокрутки
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 600) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         });
 
         // Отправка формы записи в WhatsApp клиники
